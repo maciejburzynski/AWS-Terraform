@@ -1,0 +1,7 @@
+#!/bin/bash
+sudo yum update -y
+wget https://releases.hashicorp.com/terraform/0.15.0/terraform_0.15.0_linux_amd64.zip
+unzip terraform_0.15.0_linux_amd64.zip 
+echo $"export PATH=\$PATH:$(pwd)" >> ~/.bash_profile 
+source ~/.bash_profile
+rm terraform_0.15.0_linux_amd64.zip
